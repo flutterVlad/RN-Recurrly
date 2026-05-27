@@ -27,7 +27,7 @@ const TabLayout = () => {
 
   const tabBarItemStyle = useMemo(
     () => ({
-      paddingVertical: tabBar.height / 2 - tabBar.iconFrame / 1.6,
+      paddingVertical: tabBar.itemPaddingVertical,
     }),
     [],
   );
