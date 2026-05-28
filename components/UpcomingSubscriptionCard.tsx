@@ -21,7 +21,9 @@ const UpcomingSubscriptionCard = ({
             <Icon />
           </View>
           <View className="gap-0.5">
-            <Text className="font-sans-bold">{formatCurrency(data.price)}</Text>
+            <Text className="font-sans-bold">
+              {formatCurrency(data.price, data.currency)}
+            </Text>
             <Text
               className="text-xs text-muted-foreground font-sans-semibold"
               numberOfLines={1}

@@ -66,7 +66,7 @@ export default function App() {
         data={UPCOMING_SUBSCRIPTIONS}
         keyExtractor={(item) => item.id}
         horizontal
-        style={{ height: 135 }}
+        style={{ flexGrow: 0 }}
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{
           paddingHorizontal: 16,
@@ -92,7 +92,7 @@ export default function App() {
         renderItem={({ item }) => <SubscriptionCard data={item} />}
         ListEmptyComponent={
           <Text className="font-sans-regular mt-4 mb-4 text-muted-foreground">
-            No upcoming subscription yet.
+            No subscription yet.
           </Text>
         }
       />
