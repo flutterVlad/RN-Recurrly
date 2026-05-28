@@ -61,4 +61,8 @@
   .tabs-glyph {
     @apply size-6;
   }
+
+  .home-header {
+    @apply mb-2.5 flex-row items-center justify-between;
+  }
 }
